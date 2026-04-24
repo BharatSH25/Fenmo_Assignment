@@ -21,14 +21,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from database import get_db, init_db
 from models import ExpenseCreate, ExpenseListResponse, ExpenseOut
-from logger import logger
-logger.info("Fenmo backend started")
+
+
 
 # ---------------------------------------------------------------------------
 # Configuration — all from environment (constraint #5)
 # ---------------------------------------------------------------------------
 CORS_ORIGIN: str = os.environ.get("CORS_ORIGIN", "http://localhost:5173")
-logger.info("CORS_ORIGIN:----- %s", CORS_ORIGIN)
+print("CORS_ORIGIN:----- %s", CORS_ORIGIN)
 
 # ---------------------------------------------------------------------------
 # Lifespan: replaces deprecated @app.on_event("startup")
