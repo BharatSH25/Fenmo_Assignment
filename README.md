@@ -44,8 +44,8 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-The API is now live at `http://localhost:8000`.  
-Interactive docs: `http://localhost:8000/docs`.
+The API is now live at `https://fenmo-assignment-jade.vercel.app`.  
+Interactive docs: `https://fenmo-assignment-by0x.onrender.com/docs`.
 
 ### Frontend
 
@@ -60,7 +60,7 @@ npm install
 npm run dev
 ```
 
-The app is now live at `http://localhost:5173`.
+The app is now live at `https://fenmo-assignment-jade.vercel.app`.
 
 ---
 
